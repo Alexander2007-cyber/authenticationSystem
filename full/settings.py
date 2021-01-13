@@ -113,17 +113,11 @@ USE_L10N = True
 USE_TZ = True
 
 
-CORS_ALLOWED_ORIGINS = [
-
-]
-
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'frontend/build/static')
 ]
-
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
@@ -150,5 +144,3 @@ AUTHENTICATION_BACKENDS = {
 LOGOUT_REDIRECT_URL = '/'
 LOGIN_URL = '/login/auth0'
 LOGIN_REDIRECT_URL = '/'
-
-django_heroku.settings(locals())

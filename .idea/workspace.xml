@@ -10,11 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d854e7a-5ef5-4e32-addc-86505158b7b8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/full/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/full/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-    </list>
+    <list default="true" id="1d854e7a-5ef5-4e32-addc-86505158b7b8" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -122,7 +118,7 @@
       <workItem from="1610461461625" duration="910000" />
       <workItem from="1610472184748" duration="1512000" />
       <workItem from="1610522321196" duration="3492000" />
-      <workItem from="1610531256847" duration="3715000" />
+      <workItem from="1610531256847" duration="4039000" />
     </task>
     <task id="LOCAL-00001" summary="hahaha">
       <created>1610381291589</created>
@@ -145,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610533677060</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="hahawoow">
+      <created>1610535617764</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1610535617764</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,7 +169,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="hahaha" />
     <MESSAGE value="haha" />
-    <option name="LAST_COMMIT_MESSAGE" value="haha" />
+    <MESSAGE value="hahawoow" />
+    <option name="LAST_COMMIT_MESSAGE" value="hahawoow" />
   </component>
   <component name="WindowStateProjectService">
     <state x="462" y="119" key="FileChooserDialogImpl" timestamp="1610472126540">
