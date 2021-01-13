@@ -114,7 +114,7 @@ USE_TZ = True
 
 
 CORS_ALLOWED_ORIGINS = [
-    '*'
+
 ]
 
 STATIC_URL = '/static/'
