@@ -1,5 +1,7 @@
 import os
 from pathlib import Path
+import django_heroku
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -41,6 +43,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware'
 ]
 
 ROOT_URLCONF = 'full.urls'
@@ -114,13 +117,15 @@ CORS_ALLOWED_ORIGINS = [
     '*'
 ]
 
-STATIC_URL = '/frontend/build/static'
+STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'frontend/build/static')
 ]
 
-STATIC_ROOT = os.path.join(BASE_DIR, STATIC_URL)
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 SOCIAL_AUTH_TRAILING_SLASH = False
 SOCIAL_AUTH_AUTH0_KEY = "nbWIiiqyI8q6wJAISCpGaJTVtskSFHim"
@@ -145,3 +150,5 @@ AUTHENTICATION_BACKENDS = {
 LOGOUT_REDIRECT_URL = '/'
 LOGIN_URL = '/login/auth0'
 LOGIN_REDIRECT_URL = '/'
+
+django_heroku.settings(locals())
